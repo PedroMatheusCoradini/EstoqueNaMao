@@ -24,3 +24,4 @@ public class Client
 // ("Server=localhost,1433;Database=Blog;User ID=sa;Password=1q2w3e4r@#$")
 // "Server=DESKTOP-SQN2K91\\SQLEXPRESS;Database=EstoqueNaMaoBD;Trusted_Connection=True; TrustServerCertificate=True;"
 // mongodb+srv://<username>:<password>@estoquenamaodb.h01zcvg.mongodb.net/?retryWrites=true&w=majority
+// "Server=DESKTOP-6V1N3BP\SQLEXPRESS;Database=EstoqueNaMaoBD;Trusted_Connection=True; TrustServerCertificate=True;"
