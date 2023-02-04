@@ -16,34 +16,32 @@ export class ClientsComponent {
 
   ngOnInit(): void{
 
-    this.tituloFormulario = 'Novo Cliente'
+    this.tituloFormulario = 'Novo Cliente';
     this.formulario = new FormGroup({
-
-      Name: new FormControl(null),
-      CNPJ: new FormControl(null),
-      FantasyName: new FormControl(null),
-      CPF: new FormControl(null),
-      StateIncrition: new FormControl(null),
-      Phone: new FormControl(null),
-      ResidentialPhone: new FormControl(null),
-      Adress: new FormControl(null),
-      AdressNumber: new FormControl(null),
-      Complement: new FormControl(null),
-      CEP: new FormControl(null),
-      District: new FormControl(null),
-      City: new FormControl(null),
-      State: new FormControl(null),
-      Country: new FormControl(null),
-      ClientStatus: new FormControl(null)
-
+      name: new FormControl(null),
+      fantasyName: new FormControl(null),
+      cnpj: new FormControl(null),
+      cpf: new FormControl(null),
+      stateIncrition: new FormControl(null),
+      phone: new FormControl(null),
+      residentialPhone: new FormControl(null),
+      adress: new FormControl(null),
+      adressNumber: new FormControl(null),
+      complement: new FormControl(null),
+      cep: new FormControl(null),
+      district: new FormControl(null),
+      city: new FormControl(null),
+      state: new FormControl(null),
+      country: new FormControl(null),
+      clientStatus: new FormControl(null)
     });
   }
 
   EnviarFormulario(): void{
     const client: Client = this.formulario.value;
 
-    this.clientService.AddClient(client).subscribe((resultado) => {
-      alert('Pessoa Inserida com sucesso"');
+    this.clientService.Post(client).subscribe((resultado) => {
+      alert('Pessoa Inserida com sucesso');
     });
 
   }

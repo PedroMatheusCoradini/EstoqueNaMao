@@ -6,7 +6,7 @@ using BackEstoqueNaMao.Models;
 namespace BackEstoqueNaMao.Controllers;
 
 [ApiController]
-[Route("api/client")]
+[Route("api/[controller]")]
 public class ClientController : ControllerBase
 {
     private readonly Context _context;

@@ -5,18 +5,16 @@ import { Client } from './Client';
 
 const httpOptions = {
   headers: new HttpHeaders({
-  'Content-Type' : 'aplication/json'
+    'Content-Type' : 'application/json'
   })
-};
-
-
+}
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClientService {
 
-  url = "http://localhost:5001/api/clients";
+  url = "http://localhost:5136/api/client";
 
   constructor(private http: HttpClient) { }
 
@@ -30,7 +28,7 @@ export class ClientService {
   }
 
 
-  AddClient(client: Client): Observable<any>{
+  Post(client: Client): Observable<any>{
     return this.http.post<Client>(this.url, client, httpOptions);
 
   }

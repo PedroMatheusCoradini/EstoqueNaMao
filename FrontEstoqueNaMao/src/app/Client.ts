@@ -1,19 +1,19 @@
 export class Client{
-    Id: number = 0;
-    Name: string = "";
-    CNPJ: string = "";
-    FantasyName: string = "";
-    CPF: string = "";
-    StateIncrition: string = "";
-    Phone: string = "";
-    ResidentialPhone: string = "";
-    Adress: string = "";
-    AdressNumber: number = 0;
-    Complement: string = "";
-    CEP: number = 0;
-    District: string = "";
-    City: string = "";
-    State: string = "";
-    Country: string = "";
-    ClientStatus: Boolean = false;
+    id: number = 0;
+    name: string = "";
+    fantasyName: string = "";
+    cnpj: string = "";
+    cpf: string = "";
+    stateIncrition: string = "";
+    phone: string = "";
+    residentialPhone: string = "";
+    adress: string = "";
+    adressNumber: number = 0;
+    complement: string = "";
+    cep: number = 0;
+    district: string = "";
+    city: string = "";
+    state: string = "";
+    country: string = "";
+    clientStatus: Boolean = false;
 }
