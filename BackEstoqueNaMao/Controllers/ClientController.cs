@@ -54,10 +54,10 @@ public class ClientController : ControllerBase
         return Ok();
     }
 
-    [HttpDelete("{id}")]
-    public async Task<ActionResult<Client>> DeleteAsync(int id)
+    [HttpDelete("{clientId}")]
+    public async Task<ActionResult<Client>> DeleteAsync(int clientId)
     {
-        Client? client = await _context.Clients.FindAsync(id);
+        Client? client = await _context.Clients.FindAsync(clientId);
 
         if (client == null)
             return NotFound();

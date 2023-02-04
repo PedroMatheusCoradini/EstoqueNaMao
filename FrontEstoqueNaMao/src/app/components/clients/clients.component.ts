@@ -32,8 +32,7 @@ export class ClientsComponent {
       district: new FormControl(null),
       city: new FormControl(null),
       state: new FormControl(null),
-      country: new FormControl(null),
-      clientStatus: new FormControl(null)
+      country: new FormControl(null)
     });
   }
 
@@ -45,7 +44,4 @@ export class ClientsComponent {
     });
 
   }
-
-
-
 }
