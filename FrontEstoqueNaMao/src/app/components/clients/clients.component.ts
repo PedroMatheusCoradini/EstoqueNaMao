@@ -39,9 +39,13 @@ export class ClientsComponent {
   EnviarFormulario(): void{
     const client: Client = this.formulario.value;
 
-    this.clientService.Post(client).subscribe((resultado) => {
-      alert('Pessoa Inserida com sucesso');
-    });
-
+    this.clientService.Post(client).subscribe(
+      (resultado: any) => {
+        alert('Pessoa Inserida com sucesso');
+      },
+      (erro: any) => {
+        alert('Ocorreu um erro ao inserir a pessoa');
+      }
+    );
   }
 }
