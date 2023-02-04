@@ -7,10 +7,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from  '@angular/forms';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ClientService } from './client.service';
+import { ClientsComponent } from './components/clients/clients.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClientsComponent
   ],
   imports: [
     BrowserModule,
