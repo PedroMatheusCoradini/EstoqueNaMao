@@ -22,7 +22,7 @@
 
         <div class="form-group">
           <label>CPF</label>
-          <input type="text" class="form-control form-control-sm" formControlName="cpf" />
+          <input type="text" class="form-control form-control-sm" formControlName="cpf" mask="000.000.000-00"/>
         </div>
 
         <div class="form-group">
@@ -32,12 +32,12 @@
 
         <div class="form-group">
           <label>Telefone</label>
-          <input type="text" class="form-control form-control-sm" formControlName="phone" />
+          <input type="tel" class="form-control form-control-sm" formControlName="phone" />
         </div>
 
         <div class="form-group">
           <label>Telefone Fixo</label>
-          <input type="text" class="form-control form-control-sm" formControlName="residentialPhone" />
+          <input type="tel" class="form-control form-control-sm" formControlName="residentialPhone" />
         </div>
 
         <div class="form-group">
@@ -80,19 +80,14 @@
           <input type="text" class="form-control form-control-sm" formControlName="country" />
         </div>
 
-        <!-- <div class="form-group">
-          <label>Estatus</label>
-          <input type="text" class="form-control form-control-sm" formControlName="clientStatus" />
-        </div> -->
-
         <div class="container">
           <div class="row">
             <div>
               <button type="submit" class="btn btn-sm btn-outline-secondary">Salvar</button>
             </div>
-            <div class="pl-1">
+            <!--<div class="pl-1">
               <button type="button" class="btn btn-sm btn-ligth">Voltar</button>
-            </div>
+            </div>-->
           </div>
         </div>
 
@@ -101,3 +96,6 @@
   </div>
 
 </div>
+
+
+
